@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="ITI_logo.png" alt="ITI Logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./roadmappage.html">Road-Map</a></li>
+                <li><a href="./form.html" target="_blank">Registration Form</a></li>
+                <li><a href="https://www.iti.gov.eg" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="container">
+    <h1 class="r1">Register-Creat Account</h1>
+    <h2 class="h2">Field marked with <span>*</span> are compulsory field</h2>
+    <form action="script.js" method="post">
+        <table class="table">
+            <colgroup>
+                <col class="col">
+            </colgroup>
+                <tr>
+                    <td>
+                        <label class="name"><span>*</span>Your Name</label>
+                    </td>
+                    <td> <input type="text" name="name" id="name" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="mail"><span>*</span>E-Mail ID</label>
+                    </td>
+                    <td> <input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="alt">Alternate E-Mail ID</label>
+                    </td>
+                    <td> <input type="email" name="alt-email" id="alt-email"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="ph">Your Phone</label> 
+                    </td>
+                     <td><label id="count">Country Code </label> - <label id="city">City Code</label> - <label id="pno">Phone Number</label><br>
+                        <input type="text" name="countrycode" id="countrycode"> - <input type="text" name="citycode" id="citycode"> - <input type="tel" name="phone" id="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="mob">Mobile Phone</label>
+                    </td>
+                    <td> <input type="tel" name="mobile" id="mobile"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="add"><span>*</span>Postal Address</label>
+                    </td>
+                    <td> <textarea name="address" id="address" cols="30" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="select"><span>*</span>Country</label>
+                    </td>
+                    <!-- <td> <input type="text" name="Country" id="Country" required></td> -->
+                    <td> <select id="country" name="country">
+                            <option value="select">--------------------Select one--------------------</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="China">China</option>
+                        </select>
+                    </td>
+                <tr>
+                    <td>
+                        <label id="pass"><span>*</span>Password</label>
+                    <td><input type="password" id="pwd" name="pwd" minlength="8" required>
+                    </td>
+    
+    
+                </tr>
+                <tr>
+                    <td>
+                        <label id="repass"><span>*</span>Re-Enter Password</label>
+                    <td><input type="password" id="re-pwd" name="re-pwd" minlength="8" required>
+                    </td>
+                </tr>
+                
+        </table>
+    
+
+    <br>
+    <!-- <td> -->
+        <div class="lolo">
+    <label id="te1">
+        <input type="checkbox" id="terms" name="terms">I accept the <a href="terms.html" target="_blank"> Terms of Use</a>
+
+    </label>
+    <!-- </td> -->
+    <br><br>
+    <!-- <tr>  -->
+    <!-- <td> -->
+      
+    <input type="button" id="cont" name="cont" value="Continue >>">
+    <input type="reset" id="reset" name="reset" value="Reset">
+    <!-- </td> -->
+
+    <!-- </tr> -->
+</div>
+</div>
+</form>
+    
+    <!-- <table class="table">
+   <tr>
+    <td> <form action="#" method="post"></form>
+    <label for="name"><span>*</span>Your Name</label></td>
+       <td> <input type="text" name="name" id="name"></td>
+</tr>
+</table> -->
+    <footer>
+        <hr>
+        <p class="copy">Copyright 2021 by Noha Salah &reg; . All Rights Reserved .</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
